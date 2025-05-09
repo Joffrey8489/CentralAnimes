@@ -1,467 +1,698 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=
     , initial-scale=1.0">
     <title>C|A</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha284-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha284-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
 </head>
 <style>
-    .sobre:hover{
+    .sobre:hover {
         border-radius: 10px;
-        background-color:rgb(68, 68, 128);
+        background-color: rgb(68, 68, 128);
     }
-    .divf{
+
+    .divf {
         text-align: justify;
         text-align: center;
         height: 250px;
-        padding: 1%;        
+        padding: 1%;
     }
-    .navbar{
+
+    .navbar {
         z-index: 1050;
     }
-   
+        .custom-pagination {
+            background-color: #000;
+            
+            border-radius: 0.5rem;
+        }
+        .page-link {
+           background: black;
+           
+        }
+
 </style>
+
 <body class="bg-black">
 
-    <nav style="height: 70px; font-size: large;" class="navbar  navbar-expand-sm  navbar-dark  text-white bg-black w-100  fixed-top   ">
+    <nav style="height: 70px; font-size: large;"
+        class="navbar  navbar-expand-sm  navbar-dark  text-white bg-black w-100  fixed-top   ">
         <div class="container">
             <h2 class="col-1"><img class="img-fluid rounded rounded-circle " src="img/logo.jpg" alt=""></h2>
-     <a class=" navbar-brand d-flex align-items-center ">
-        <h1  class=" text-primary"><i> Central</i> </h1> <p> </p> <h2 class="text-danger"> Animes</h2>
-     </a> 
-     <button class="btn btn-outline-secondary" data-bs-toggle="offcanvas" data-bs-target="#painel"><i class="bi bi-search"></i></button>
-   
-     <button class="btn btn-outline-secondary" data-bs-toggle="offcanvas" data-bs-target="#painel2"><i class="bi bi-three-dots-vertical"></i></button>
-        <button class="navbar-toggler" type="button"
-        data-bs-toggle="collapse" data-bs-target="#menuNavbar">
-        <span class="navbar-toggler-icon"></span></button>
-     <div class="collapse navbar-collapse  " id="menuNavbar">
-       
-    <div class="navbar-nav ">
-<a href="index.html" class="navbar-item btn btn-outline-light border border-black ms-3 "><i class="bi bi-house "></i>Home</a>
-<div class="dropdown m-auto ">
-<a href="" class="navbar-item btn btn-outline-light border-black dropdown-toggle" data-bs-toggle="dropdown">Products</a>
-<ul class="dropdown-menu">
-    <li>
-        <a href="" class="dropdown-item">Shits/T-shirts</a>
-    </li>
-    <li>
-        <a href="" class="dropdown-item">Hats</a>
-    </li>
-    <li>
-        <a href="" class="dropdown-item">Tickets</a>
-    </li>
-</ul>
-</div>
-<a href="animes.html" class="navbar-item btn btn-outline-light border-black "><i class="bi bi-amd"></i>Animes</a>
-<a href="mangas.html" class="navbar-item btn btn-outline-light border-black"><i class="bi bi-newspaper"></i>Mangás</a> 
-<a href="log.html" class="navbar-item btn btn-outline-light border-black"><i class="bi bi-file-person"></i>log</a>
-<button href="" class="navbar-item btn btn-outline-light border-black btn   position-relative "><i class="bi bi-bell-fill"></i>
-    <span class="badge bg-danger position-absolute rounded-pill top m-2-0 start-100 translate-middle">!</span>Notifications</button>
-    </div>
-     </div>
-    </div>
+            <a class=" navbar-brand d-flex align-items-center ">
+                <h1 class=" text-primary"><i> Central</i> </h1>
+                <p> </p>
+                <h2 class="text-danger"> Animes</h2>
+            </a>
+            <button class="btn btn-outline-secondary" data-bs-toggle="offcanvas" data-bs-target="#painel"><i
+                    class="bi bi-search"></i></button>
+
+            <button class="btn btn-outline-secondary" data-bs-toggle="offcanvas" data-bs-target="#painel2"><i
+                    class="bi bi-three-dots-vertical"></i></button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavbar">
+                <span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse  " id="menuNavbar">
+
+                <div class="navbar-nav ">
+                    <a href="index.html" class="navbar-item btn btn-outline-light border border-black ms-3 "><i
+                            class="bi bi-house "></i>Home</a>
+                    <div class="dropdown m-auto ">
+                        <a href="" class="navbar-item btn btn-outline-light border-black dropdown-toggle"
+                            data-bs-toggle="dropdown">Products</a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="" class="dropdown-item">Shits/T-shirts</a>
+                            </li>
+                            <li>
+                                <a href="" class="dropdown-item">Hats</a>
+                            </li>
+                            <li>
+                                <a href="" class="dropdown-item">Tickets</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="animes.html" class="navbar-item btn btn-outline-light border-black "><i
+                            class="bi bi-amd"></i>Animes</a>
+                    <a href="mangas.html" class="navbar-item btn btn-outline-light border-black"><i
+                            class="bi bi-newspaper"></i>Mangás</a>
+                    <a href="log.html" class="navbar-item btn btn-outline-light border-black"><i
+                            class="bi bi-file-person"></i>log</a>
+                    <button href="" class="navbar-item btn btn-outline-light border-black btn   position-relative "><i
+                            class="bi bi-bell-fill"></i>
+                        <span
+                            class="badge bg-danger position-absolute rounded-pill top m-2-0 start-100 translate-middle">!</span>Notifications</button>
+                </div>
+            </div>
+        </div>
     </nav>
     <div class="mt-1  w-100 ">
-        <div style="height: 160px;" class="offcanvas   offcanvas-top text-bg-dark w-100 mt-5   d-flex" id="painel" tabindex="-1" data-bs-scroll="true" style="--bs-offcanvas-width:250px;">
-               <div class="offcanvas-header">
+        <div style="height: 160px;" class="offcanvas   offcanvas-top text-bg-dark w-100 mt-5   d-flex" id="painel"
+            tabindex="-1" data-bs-scroll="true" style="--bs-offcanvas-width:250px;">
+            <div class="offcanvas-header">
                 <h2 class="offcanvas-title text-info">Search Painel</h2>
                 <button class="btn-close" data-bs-dismiss="offcanvas"></button>
-               </div>
-               <div class=" offcanvas-body d-flex">
-                <div  class=" d-flex "><div class="input-group  d-flex">
-                    <input type="search " style="height: 30px;"  name="" id="" class="form-control bg-body-secondary border border-black d-flex " placeholder="search.......">
-                    <button type="submit" style="height: 30px;" class="btn btn-outline-secondary p-1 "><i class="bi bi-search"></i>..</button>
-                   
+            </div>
+            <div class=" offcanvas-body d-flex">
+                <div class=" d-flex ">
+                    <div class="input-group  d-flex">
+                        <input type="search " style="height: 30px;" name="" id=""
+                            class="form-control bg-body-secondary border border-black d-flex "
+                            placeholder="search.......">
+                        <button type="submit" style="height: 30px;" class="btn btn-outline-secondary p-1 "><i
+                                class="bi bi-search"></i>..</button>
+
+                    </div>
                 </div>
-                </div>
-               </div>
+            </div>
         </div>
-        
-        </div>
-       
+
+    </div>
+
     <div class="container overflow-auto">
-            <div style="height: 620px; width: 80%;" class="offcanvas   offcanvas-start text-bg-dark opacity-75 d-flex" id="painel2" tabindex="-1" data-bs-scroll="true" style="--bs-offcanvas-width:250px;">
-               <div class="offcanvas-header">
-                <h1  class=" text-primary"><i> Central</i> </h1> <p> </p> <h2 class="text-danger"> Animes</h2>
-             
+        <div style="height: 620px; width: 80%;" class="offcanvas   offcanvas-start text-bg-dark opacity-75 d-flex"
+            id="painel2" tabindex="-1" data-bs-scroll="true" style="--bs-offcanvas-width:250px;">
+            <div class="offcanvas-header">
+                <h1 class=" text-primary"><i> Central</i> </h1>
+                <p> </p>
+                <h2 class="text-danger"> Animes</h2>
+
                 <button class="btn-close" data-bs-dismiss="offcanvas"></button>
-               </div>
-               <div class="offcanvas-body">
+            </div>
+            <div class="offcanvas-body">
                 <h2 class="text-success">Main menu</h2>
-            <hr>
-                <a href="" style="width: 250px;" class="btn btn-secondary text-white"><i class="bi bi-file-earmark-person me-2"></i>My information</a>
                 <hr>
-                <a href="" style="width: 250px;" class="btn btn-secondary text-white"><i class="bi bi-gear-fill me-4"></i>Config</a>
+                <a href="" style="width: 250px;" class="btn btn-secondary text-white"><i
+                        class="bi bi-file-earmark-person me-2"></i>My information</a>
                 <hr>
-                <a href=""style="width: 250px;" class="btn btn-secondary text-white"> <i class="bi bi-star-fill me-4"></i>Favorites</a>
+                <a href="" style="width: 250px;" class="btn btn-secondary text-white"><i
+                        class="bi bi-gear-fill me-4"></i>Config</a>
                 <hr>
-                <a href="" style="width: 250px;" class="btn btn-secondary text-white"><i class="bi bi-tv  me-2"></i>Whatch Plan</a>
+                <a href="" style="width: 250px;" class="btn btn-secondary text-white"> <i
+                        class="bi bi-star-fill me-4"></i>Favorites</a>
                 <hr>
-                <a href=""style="width: 250px;" class=" btn btn-secondary text-white"><i class="bi bi-bookmarks me-5"></i>Notes</a>
+                <a href="" style="width: 250px;" class="btn btn-secondary text-white"><i
+                        class="bi bi-tv  me-2"></i>Whatch Plan</a>
                 <hr>
-                <a href=""style="width: 250px;" class="btn btn-secondary text-white"><i class="bi bi-share-fill me-5"></i>Share</a>
+                <a href="" style="width: 250px;" class=" btn btn-secondary text-white"><i
+                        class="bi bi-bookmarks me-5"></i>Notes</a>
                 <hr>
-                <a href=""style="width: 250px;" class="btn btn-secondary text-white"><i class="bi bi-book-half me-2"></i>Instructions</a>
+                <a href="" style="width: 250px;" class="btn btn-secondary text-white"><i
+                        class="bi bi-share-fill me-5"></i>Share</a>
                 <hr>
-               </div>
+                <a href="" style="width: 250px;" class="btn btn-secondary text-white"><i
+                        class="bi bi-book-half me-2"></i>Instructions</a>
+                <hr>
+            </div>
         </div>
-        
-        </div>
-    
-       
-        <div class="container d-flex my-3">
-    <h2 class="text-info mx-2 my-2">Most Popular</h2>
-    <h4 class="text-warning ms-auto my-2 p-1">Subtitled</h4>
-    <h4 class="my-2 p-1">/</h4>
-    <h4 class="text-warning my-2 p-1">Dubled</h4>
-</div> 
-<div class="mx-3 accordion  card-group  m-1 row-cols m-auto">
-    <div class="card bg-black  accordion-item col-5 m-1 d-sm-block border-black d-sm-block rounded  w-100">
-        <img   style="height: 300px;" src="img/One_Piece_Anime_Logo.webp" alt="" class="card-img-top">
-        <h3 style="font-size: x-large;color: rgb(20, 238, 176);" class="bg-secondary accordion-header accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#opex" >One Piece
 
-        </h3>
-         
-        <div class=" accordion-body accordion-collapse collapse bg-dark-subtle " id="opex">
-            <h6 class="card-text">Year: 1998 </h6>
-            <h6 class="card-text">Author: Eiichiro Oda </h6>
-            <h6 class="card-text">Studio: Toei Animation, FUNimation Entertainment, Fuji TV, 4Kids Entertainment, TAP, Asatsu DK, Magic Bus, Mushi Productions, Studio Guts, Asahi Production
-            </h6>
-            <h6 class="card-text">Gender :  Action, Adventure, Comedy, Drama, Fantasy
-            </h6>
-            <h6 class="card-text">Audo: Subtitled & Dubled</h6>
-            <h6 class="card-text">Duraction: 23min/Ep</h6>
-            <h6 class="card-text">Status: Launching</h6>
-              <p class="card-text"> <b>Synopsis:</b>Gold Roger was known as the Pirate King, the strongest and most infamous being to have sailed the Grand Line. The capture and death of Roger by the World Government brought a change throughout the world. His last words before his death revealed the location of the greatest treasure in the world, One Piece. It was this revelation that brought about the Grand Age of Pirates, men who dreamed of finding One Piece (which promises an unlimited amount of riches and fame), and quite possibly the most coveted of titles for the person who found the treasure...</p>
-            
-        </div>
-        <div class="card-footer bg-secondary">
-            <a style="font-size: x-large;" class="text-warning text-decoration-none p-1   " href=""><i class=" bi-cloud-arrow-down"></i>Sub</a>
-            <a style="font-size: x-large;" class="text-warning text-decoration-none p-1   " href=""><i class=" bi-cloud-arrow-down"></i>Dub</a>
-            <a style="font-size: x-large;" class="text-warning text-decoration-none p-1   " href=""><i class=" bi-cloud-arrow-down"></i>Mangá</a>
-        </div>
     </div>
-    
-<div class="card bg-black accordion-item col-5 m-1 border-black rounded d-sm-block w-100">
-        <img style="height: 300px;"  src="img/4.webp" alt="" class="card-img-top">
-        <h3 style="font-size: x-large;color: rgb(20, 238, 176);" class="card-header bg-secondary accordion-button collapsed " data-bs-toggle="collapse" data-bs-target="#kimetsu" type="button">Kimetsu No Yaiba</h3>
-        
-        <div class=" accordion-collapse collapse card-body bg-dark-subtle" id="kimetsu">
-            <h6 class="card-text">Year: 2019</h6>
-            <h6 class="card-text">Author: Koyoharu Gotouge</h6>
-            <h6 class="card-text">Studio: Ufotable</h6>
-            <h6 class="card-text">Gender : Action, demons, supernatural, Shounen </h6>
-            <h6 class="card-text">Audo: Subtitled & Dubled</h6>
-            <h6 class="card-text">Duraction: 23min/Ep</h6>
-            <h6 class="card-text">Status: awaiting</h6>
-              <p class="card-text"> <b>Synopsis:</b> Tanjiro, a kind young man who makes a living selling coal, discovers that his family was massacred by a demon. And, to make matters worse, Nezuko, her younger sister and only survivor, also ended up transformed into a demon. And he joins the demon slayer squad and starts fighting and hunting oni to find the demon that transformed his sister, who is the original and oldest oni, to find the cure and transform his sister Kamado Nezuko back.</p>
-            
-        </div>
-        <div class="card-footer bg-secondary">
-            <a style="font-size: x-large;" class="text-warning text-decoration-none p-1   " href=""><i class=" bi-cloud-arrow-down"></i>Sub</a>
-            <a style="font-size: x-large;" class="text-warning text-decoration-none p-1   " href=""><i class=" bi-cloud-arrow-down"></i>Dub</a>
-            <a style="font-size: x-large;" class="text-warning text-decoration-none p-1   " href=""><i class=" bi-cloud-arrow-down"></i>Mangá</a>
-        </div>
-    </div>
-    <div class="card bg-black accordion-item col-5 m-1 border-black rounded d-sm-block w-100">
-        <img  style="height: 300px;"  src="img/jujutsu-kaisen.jpg" alt="" class="card-img-top">
-        <h3 style="font-size: x-large;color: rgb(20, 238, 176);" class="card-header bg-secondary accordion-button collapsed " data-bs-toggle="collapse" data-bs-target="#jujutsu" type="button">jujutsu kaisen</h3>
-        
-        <div class=" accordion-collapse collapse card-body bg-dark-subtle" id="jujutsu">
-            <h6 class="card-text">Year: 2024</h6>
-            <h6 class="card-text">Author: Gege Akutami.</h6>
-            <h6 class="card-text">Studio: MAPPA</h6>
-            <h6 class="card-text">Gender : Action, Drama, supernatural </h6>
-            <h6 class="card-text">Audo: Subtitled & Dubled</h6>
-            <h6 class="card-text">Duraction: 23min/Ep</h6>
-            <h6 class="card-text">Status: awaiting</h6>
-              <p class="card-text"> <b>Synopsis:</b> Itadori just needed some more time with his friends and with his grandfather who was in the hospital. To do this, he decides to join the Occult club, where many adventures begin. There, the members find a cursed object and remove its protective seal, which attracts creatures called "curses". And from there he meets new friends and people called jujutsu sorcerers whose mission is to fight against curses and he ends up entering the jujutsu school and becomes a jujutsu sorcerer and his life changes completely.</p>
-            
-        </div>
-        <div class="card-footer bg-secondary">
-            <a style="font-size: x-large;" class="text-warning text-decoration-none p-1   " href=""><i class=" bi-cloud-arrow-down"></i>Sub</a>
-            <a style="font-size: x-large;" class="text-warning text-decoration-none p-1   " href=""><i class=" bi-cloud-arrow-down"></i>Dub</a>
-            <a style="font-size: x-large;" class="text-warning text-decoration-none p-1   " href=""><i class=" bi-cloud-arrow-down"></i>Mangá</a>
-        </div>
-    </div>
-    <div class="card bg-black accordion-item col-5 m-1 border-black rounded d-sm-block w-100">
-        <img  style="height: 300px;"  src="img/12.jpg" alt="" class="card-img-top">
-        <h3 style="font-size: x-large;color: rgb(20, 238, 176);" class="card-header bg-secondary accordion-button collapsed " data-bs-toggle="collapse" data-bs-target="#onePunchMan" type="button">One Punch Man</h3>
-        
-        <div class=" accordion-collapse collapse card-body bg-dark-subtle" id="onePunchMan">
-            <h6 class="card-text">Year: 2015</h6>
-            <h6 class="card-text">Author: Tomohiro Suzuki</h6>
-            <h6 class="card-text">Studio: Madhouse</h6>
-            <h6 class="card-text">Gender :  Action, overpower, super hero, scientific fiction, comedy, supernatural </h6>
-            <h6 class="card-text">Audo: Subtitled & Dubled</h6>
-            <h6 class="card-text">Duraction: 23min/Ep</h6>
-            <h6 class="card-text">Status: awaiting</h6>
-              <p class="card-text"> <b>Synopsis:</b>Saitama, an extremely powerful superhero, who became bored with the lack of challenges in his fights against evil and seeks to find a worthy opponent. On this journey he meets Genus, a young cyborg who ends up admiring him a lot and becomes his disciple, aiming to become stronger and Saitama and Genos join the superhero association and their journey continues.</p>
-            
-        </div>
-        <div class="card-footer bg-secondary">
-            <a style="font-size: x-large;" class="text-warning text-decoration-none p-1   " href=""><i class=" bi-cloud-arrow-down"></i>Sub</a>
-            <a style="font-size: x-large;" class="text-warning text-decoration-none p-1   " href=""><i class=" bi-cloud-arrow-down"></i>Dub</a>
-            <a style="font-size: x-large;" class="text-warning text-decoration-none p-1   " href=""><i class=" bi-cloud-arrow-down"></i>Mangá</a>
-        </div>
-    </div>
-</div>
-</div>
-</div>
-   
-<div class="mx-3 accordion  card-group  m-1 row-cols m-auto">
-    <div class="card bg-black  accordion-item col-5 m-1 d-sm-block border-black d-sm-block rounded  w-100">
-        <img   style="height: 300px;" src="img/solo-leveling-s-jinwoo-and-the-statue-of-god.avif" alt="" class="card-img-top">
-        <h3 style="font-size: x-large;color: rgb(20, 238, 176);" class="bg-secondary accordion-header accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#soloLeveling" >Solo Leveling
 
-        </h3>
-         
-        <div class=" accordion-body accordion-collapse collapse bg-dark-subtle " id="soloLeveling">
-            <h6 class="card-text">Year: 2024</h6>
-            <h6 class="card-text">Author: Chu Gong</h6>
-            <h6 class="card-text">Studio: A-1 Pictures</h6>
-            <h6 class="card-text">Gender : Isekai, Action, overpower </h6>
-            <h6 class="card-text">Audo: Subtitled & Dubled</h6>
-            <h6 class="card-text">Duraction: 23min/Ep</h6>
-            <h6 class="card-text">Status: Launching</h6>
-              <p class="card-text"> <b>Synopsis:</b>More than a decade ago, a mysterious passage called "portal" appeared, which connects this world to a different dimension, which caused people to awaken unique powers... and these people are called "hunters". Hunters use their superhuman powers to conquer dungeons within the portals and thus earn a living. Sung Jinwoo, a low-level hunter, is considered the weakest hunter in all of humanity. One day, he comes across a "double dungeon", which has a high-level dungeon hidden inside a low-level dungeon. Faced with a seriously injured Jinwoo, a mysterious mission arises! On the verge of death, Jinwoo decides to accept this mission, thus becoming the only person capable of leveling up!</p>
-            
+    <div class="container d-flex my-4">
+
+    </div>
+    <div class="mx-3 accordion card-group m-1 row-cols m-auto" >
+        <div class="card bg-black accordion-item col-5 m-1 d-sm-block border-black d-sm-block rounded w-100">
+            <div class="accordion-header">
+                <img style="height: 300px;" src="img/solo-leveling-s-jinwoo-and-the-statue-of-god.avif" alt=""
+                    class="card-img-top">
+                <h3 style="font-size: x-large;color: rgb(20, 238, 176);" class="bg-secondary accordion-button collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#soloLeveling">Solo Leveling</h3>
+            </div>
+
+            <div class="accordion-collapse collapse" id="soloLeveling" >
+                <div class="accordion-body bg-dark-subtle">
+                    <h6 class="card-text">Year: 2024</h6>
+                    <h6 class="card-text">Author: Chu Gong</h6>
+                    <h6 class="card-text">Studio: A-1 Pictures</h6>
+                    <h6 class="card-text">Gender : Isekai, Action, overpower </h6>
+                    <h6 class="card-text">Audio: Subtitled & Dubled</h6>
+                    <h6 class="card-text">Duraction: 23min/Ep</h6>
+                    <h6 class="card-text">Status: Launching</h6>
+                    <p class="card-text"> <b>Synopsis:</b>More than a decade ago, a mysterious passage called "portal"
+                        appeared, which connects this world to a different dimension, which caused people to awaken
+                        unique powers... and these people are called "hunters". Hunters use their superhuman powers to
+                        conquer dungeons within the portals and thus earn a living. Sung Jinwoo, a low-level hunter, is
+                        considered the weakest hunter in all of humanity. One day, he comes across a "double dungeon",
+                        which has a high-level dungeon hidden inside a low-level dungeon. Faced with a seriously injured
+                        Jinwoo, a mysterious mission arises! On the verge of death, Jinwoo decides to accept this
+                        mission, thus becoming the only person capable of leveling up!</p>
+                </div>
+            </div>
+            <div class="card-footer bg-secondary">
+                <a style="font-size: x-large;" class="text-warning text-decoration-none p-1" href=""><i
+                        class="bi bi-cloud-arrow-down"></i>Sub</a>
+                <a style="font-size: x-large;" class="text-warning text-decoration-none p-1" href=""><i
+                        class="bi bi-cloud-arrow-down"></i>Dub</a>
+                <a style="font-size: x-large;" class="text-warning text-decoration-none p-1" href=""><i
+                        class="bi bi-cloud-arrow-down"></i>Mangá</a>
+            </div>
         </div>
-        <div class="card-footer bg-secondary">
-            <a style="font-size: x-large;" class="text-warning text-decoration-none p-1   " href=""><i class=" bi-cloud-arrow-down"></i>Sub</a>
-            <a style="font-size: x-large;" class="text-warning text-decoration-none p-1   " href=""><i class=" bi-cloud-arrow-down"></i>Dub</a>
-            <a style="font-size: x-large;" class="text-warning text-decoration-none p-1   " href=""><i class=" bi-cloud-arrow-down"></i>Mangá</a>
+
+        <div class="card bg-black accordion-item col-5 m-1 border-black rounded d-sm-block w-100">
+            <div class="accordion-header">
+                <img style="height: 300px;" src="img/4.webp" alt="" class="card-img-top">
+                <h3 style="font-size: x-large;color: rgb(20, 238, 176);" class="bg-secondary accordion-button collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#kimetsu">Kimetsu No Yaiba</h3>
+            </div>
+
+            <div class="accordion-collapse collapse" id="kimetsu" >
+                <div class="accordion-body bg-dark-subtle">
+                    <h6 class="card-text">Year: 2019</h6>
+                    <h6 class="card-text">Author: Koyoharu Gotouge</h6>
+                    <h6 class="card-text">Studio: Ufotable</h6>
+                    <h6 class="card-text">Gender : Action, demons, supernatural, Shounen </h6>
+                    <h6 class="card-text">Audio: Subtitled & Dubled</h6>
+                    <h6 class="card-text">Duraction: 23min/Ep</h6>
+                    <h6 class="card-text">Status: awaiting</h6>
+                    <p class="card-text"> <b>Synopsis:</b> Tanjiro, a kind young man who makes a living selling coal,
+                        discovers that his family was massacred by a demon. And, to make matters worse, Nezuko, her
+                        younger sister and only survivor, also ended up transformed into a demon. And he joins the demon
+                        slayer squad and starts fighting and hunting oni to find the demon that transformed his sister,
+                        who is the original and oldest oni, to find the cure and transform his sister Kamado Nezuko
+                        back.</p>
+                </div>
+            </div>
+            <div class="card-footer bg-secondary">
+                <a style="font-size: x-large;" class="text-warning text-decoration-none p-1" href=""><i
+                        class="bi bi-cloud-arrow-down"></i>Sub</a>
+                <a style="font-size: x-large;" class="text-warning text-decoration-none p-1" href=""><i
+                        class="bi bi-cloud-arrow-down"></i>Dub</a>
+                <a style="font-size: x-large;" class="text-warning text-decoration-none p-1" href=""><i
+                        class="bi bi-cloud-arrow-down"></i>Mangá</a>
+            </div>
+        </div>
+
+        <div class="card bg-black accordion-item col-5 m-1 border-black rounded d-sm-block w-100">
+            <div class="accordion-header">
+                <img style="height: 300px;" src="img/jujutsu-kaisen.jpg" alt="" class="card-img-top">
+                <h3 style="font-size: x-large;color: rgb(20, 238, 176);" class="bg-secondary accordion-button collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#jujutsu">Jujutsu Kaisen</h3>
+            </div>
+
+            <div class="accordion-collapse collapse" id="jujutsu" >
+                <div class="accordion-body bg-dark-subtle">
+                    <h6 class="card-text">Year: 2024</h6>
+                    <h6 class="card-text">Author: Gege Akutami.</h6>
+                    <h6 class="card-text">Studio: MAPPA</h6>
+                    <h6 class="card-text">Gender : Action, Drama, supernatural </h6>
+                    <h6 class="card-text">Audio: Subtitled & Dubled</h6>
+                    <h6 class="card-text">Duraction: 23min/Ep</h6>
+                    <h6 class="card-text">Status: awaiting</h6>
+                    <p class="card-text"> <b>Synopsis:</b> Itadori just needed some more time with his friends and with
+                        his grandfather who was in the hospital. To do this, he decides to join the Occult club, where
+                        many adventures begin. There, the members find a cursed object and remove its protective seal,
+                        which attracts creatures called "curses". And from there he meets new friends and people called
+                        jujutsu sorcerers whose mission is to fight against curses and he ends up entering the jujutsu
+                        school and becomes a jujutsu sorcerer and his life changes completely.</p>
+                </div>
+            </div>
+            <div class="card-footer bg-secondary">
+                <a style="font-size: x-large;" class="text-warning text-decoration-none p-1" href=""><i
+                        class="bi bi-cloud-arrow-down"></i>Sub</a>
+                <a style="font-size: x-large;" class="text-warning text-decoration-none p-1" href=""><i
+                        class="bi bi-cloud-arrow-down"></i>Dub</a>
+                <a style="font-size: x-large;" class="text-warning text-decoration-none p-1" href=""><i
+                        class="bi bi-cloud-arrow-down"></i>Mangá</a>
+            </div>
+        </div>
+
+        <div class="card bg-black accordion-item col-5 m-1 border-black rounded d-sm-block w-100">
+            <div class="accordion-header">
+                <img style="height: 300px;" src="img/12.jpg" alt="" class="card-img-top">
+                <h3 style="font-size: x-large;color: rgb(20, 238, 176);" class="bg-secondary accordion-button collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#onePunchMan">One Punch Man</h3>
+            </div>
+
+            <div class="accordion-collapse collapse" id="onePunchMan" >
+                <div class="accordion-body bg-dark-subtle">
+                    <h6 class="card-text">Year: 2015</h6>
+                    <h6 class="card-text">Author: Tomohiro Suzuki</h6>
+                    <h6 class="card-text">Studio: Madhouse</h6>
+                    <h6 class="card-text">Gender : Action, overpower, super hero, scientific fiction, comedy,
+                        supernatural </h6>
+                    <h6 class="card-text">Audio: Subtitled & Dubled</h6>
+                    <h6 class="card-text">Duraction: 23min/Ep</h6>
+                    <h6 class="card-text">Status: awaiting</h6>
+                    <p class="card-text"> <b>Synopsis:</b>Saitama, an extremely powerful superhero, who became bored
+                        with the lack of challenges in his fights against evil and seeks to find a worthy opponent. On
+                        this journey he meets Genus, a young cyborg who ends up admiring him a lot and becomes his
+                        disciple, aiming to become stronger and Saitama and Genos join the superhero association and
+                        their journey continues.</p>
+                </div>
+            </div>
+            <div class="card-footer bg-secondary">
+                <a style="font-size: x-large;" class="text-warning text-decoration-none p-1" href=""><i
+                        class="bi bi-cloud-arrow-down"></i>Sub</a>
+                <a style="font-size: x-large;" class="text-warning text-decoration-none p-1" href=""><i
+                        class="bi bi-cloud-arrow-down"></i>Dub</a>
+                <a style="font-size: x-large;" class="text-warning text-decoration-none p-1" href=""><i
+                        class="bi bi-cloud-arrow-down"></i>Mangá</a>
+            </div>
         </div>
     </div>
-    
-<div class="card bg-black accordion-item col-5 m-1 border-black rounded d-sm-block w-100">
-        <img style="height: 300px;"  src="img/Fire_Force_Anime_Part_2_KV.webp" alt="" class="card-img-top">
-        <h3 style="font-size: x-large;color: rgb(20, 238, 176);" class="card-header bg-secondary accordion-button collapsed " data-bs-toggle="collapse" data-bs-target="#fireforce" type="button">Enn Enn no Shoubutai</h3>
+    <div class="mx-3 accordion card-group m-1 row-cols m-auto" >
+        <div class="card bg-black accordion-item col-5 m-1 d-sm-block border-black d-sm-block rounded w-100">
+            <div class="accordion-header">
+                <img style="height: 300px;" src="img/One_Piece_Anime_Logo.webp" alt="" class="card-img-top">
+                <h3 style="font-size: x-large;color: rgb(20, 238, 176);" class="bg-secondary accordion-button collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#opex">One piece</h3>
+            </div>
+
+            <div class="accordion-collapse collapse" id="opex" >
+                <div class="accordion-body bg-dark-subtle">
+                    <h6 class="card-text">Year: 1998 </h6>
+                    <h6 class="card-text">Author: Eiichiro Oda </h6>
+                    <h6 class="card-text">Studio: Toei Animation, FUNimation Entertainment, Fuji TV, 4Kids
+                        Entertainment, TAP, Asatsu DK, Magic Bus, Mushi Productions, Studio Guts, Asahi Production
+                    </h6>
+                    <h6 class="card-text">Gender : Action, Adventure, Comedy, Drama, Fantasy
+                    </h6>
+                    <h6 class="card-text">Audo: Subtitled & Dubled</h6>
+                    <h6 class="card-text">Duraction: 23min/Ep</h6>
+                    <h6 class="card-text">Status: Launching</h6>
+                    <p class="card-text"> <b>Synopsis:</b>Gold Roger was known as the Pirate King, the strongest and
+                        most infamous being to have sailed the Grand Line. The capture and death of Roger by the World
+                        Government brought a change throughout the world. His last words before his death revealed the
+                        location of the greatest treasure in the world, One Piece. It was this revelation that brought
+                        about the Grand Age of Pirates, men who dreamed of finding One Piece (which promises an
+                        unlimited amount of riches and fame), and quite possibly the most coveted of titles for the
+                        person who found the treasure...</p>
+
+                </div>
+            </div>
+            <div class="card-footer bg-secondary">
+                <a style="font-size: x-large;" class="text-warning text-decoration-none p-1" href=""><i
+                        class="bi bi-cloud-arrow-down"></i>Sub</a>
+                <a style="font-size: x-large;" class="text-warning text-decoration-none p-1" href=""><i
+                        class="bi bi-cloud-arrow-down"></i>Dub</a>
+                <a style="font-size: x-large;" class="text-warning text-decoration-none p-1" href=""><i
+                        class="bi bi-cloud-arrow-down"></i>Mangá</a>
+            </div>
+        </div>
+
+        <div class="card bg-black accordion-item col-5 m-1 border-black rounded d-sm-block w-100">
+            <div class="accordion-header">
+                <img style="height: 300px;" src="img/Fire_Force_Anime_Part_2_KV.webp" alt="" class="card-img-top">
+                <h3 style="font-size: x-large;color: rgb(20, 238, 176);" class="bg-secondary accordion-button collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#fireforce">Fire Force</h3>
+            </div>
+
+            <div class="accordion-collapse collapse" id="fireforce" >
+                <div class="accordion-body bg-dark-subtle">
+                    <h6 class="card-text">Year: 2015</h6>
+                    <h6 class="card-text">Author: Atsushi Ōkubo</h6>
+                    <h6 class="card-text">Studio: David Production</h6>
+                    <h6 class="card-text">Gender : Action, Drama, Supernatural </h6>
+                    <h6 class="card-text">Audo: Subtitled & Dubled</h6>
+                    <h6 class="card-text">Duraction: 23min/Ep</h6>
+                    <h6 class="card-text">Status: awaiting</h6>
+                    <p class="card-text"> <b>Synopsis:</b> At some point, I don't specify, the planet's sea level rose
+                        causing the disappearance of many countries. In the year 198 of the Solar Era in Tokyo, special
+                        fire brigades, called "Fire Force", combat increasing incidents of spontaneous human combustion,
+                        where human beings are transformed into living hells, called "Infernals"
+
+                        While the Infernals are beings without consciousness called the first generation, the later
+                        generations are people who have the ability to pyrokinesis, who are able to maintain their human
+                        form. The second generation has the ability to control fire, while the third generation can emit
+                        flames in parts of their body.[citation needed]
+
+                        The Fire Force was formed by the combination of people with these powers from the Temple of the
+                        Holy Sun, the Tokyo Armed Forces and the Fire Defense Agency, and is made up of eight
+                        independent companies.Cap. 9
+
+                        Shinra Kusakabe is a young third-generation pyrokinetic who earned the nickname "Devil's
+                        Footprints" for having the ability to ignite fire in his feet. He joins the 8th Special Fire
+                        Company. His dream is to become a hero and save people from combustion, a goal he acquired after
+                        the death of his mother and younger brother following a fire in their house where Shinra was
+                        found guilty of their deaths</p>
+
+                </div>
+            </div>
+            <div class="card-footer bg-secondary">
+                <a style="font-size: x-large;" class="text-warning text-decoration-none p-1" href=""><i
+                        class="bi bi-cloud-arrow-down"></i>Sub</a>
+                <a style="font-size: x-large;" class="text-warning text-decoration-none p-1" href=""><i
+                        class="bi bi-cloud-arrow-down"></i>Dub</a>
+                <a style="font-size: x-large;" class="text-warning text-decoration-none p-1" href=""><i
+                        class="bi bi-cloud-arrow-down"></i>Mangá</a>
+            </div>
+        </div>
+
+        <div class="card bg-black accordion-item col-5 m-1 border-black rounded d-sm-block w-100">
+            <div class="accordion-header">
+                <img style="height: 300px;" src="img/dbs.jpeg" alt="" class="card-img-top">
+                <h3 style="font-size: x-large;color: rgb(20, 238, 176);" class="bg-secondary accordion-button collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#naruto">Dragon Ball Super</h3>
+            </div>
+
+            <div class="accordion-collapse collapse" id="naruto" >
+                <div class="accordion-body bg-dark-subtle">
+                    <h6 class="card-text">Year: 2015</h6>
+                    <h6 class="card-text">Author: Akira Toriyama</h6>
+                    <h6 class="card-text">Studio: Toei Animation</h6>
+                    <h6 class="card-text">Gender : Action, martial arts, adventure, comedy, science fantasy </h6>
+                    <h6 class="card-text">Audo: Subtitled & Dubled</h6>
+                    <h6 class="card-text">Duraction: 23min/Ep</h6>
+                    <h6 class="card-text">Status: Finished</h6>
+                    <p class="card-text"> <b>Synopsis:</b> Dragon Ball Super follows the adventures of protagonist Goku
+                        and his friends, after defeating Majin Buu and bringing peace to Earth once again.[9][10] Goku
+                        encounters far more powerful beings and achieves the power of a god. He defends Earth against
+                        powerful, destructive deities and travels to other universes to face more powerful opponents, as
+                        well as nearly unstoppable enemies, while discovering his new powers under the universe's gods.
+                    </p>
+
+                </div>
+            </div>
+            <div class="card-footer bg-secondary">
+                <a style="font-size: x-large;" class="text-warning text-decoration-none p-1" href=""><i
+                        class="bi bi-cloud-arrow-down"></i>Sub</a>
+                <a style="font-size: x-large;" class="text-warning text-decoration-none p-1" href=""><i
+                        class="bi bi-cloud-arrow-down"></i>Dub</a>
+                <a style="font-size: x-large;" class="text-warning text-decoration-none p-1" href=""><i
+                        class="bi bi-cloud-arrow-down"></i>Mangá</a>
+            </div>
+        </div>
+
+        <div class="card bg-black accordion-item col-5 m-1 border-black rounded d-sm-block w-100">
+            <div class="accordion-header">
+                <img  style="height: 300px;"  src="img/chainsaw.webp" alt="" class="card-img-top">
+                <h3 style="font-size: x-large;color: rgb(20, 238, 176);" class="bg-secondary accordion-button collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#codegeass">ChainSaw Man</h3>
+            </div>
+
+            <div class="accordion-collapse collapse" id="codegeass" >
+                <div class="accordion-body bg-dark-subtle">
+                    <h6 class="card-text">Year: 2022</h6>
+                    <h6 class="card-text">Author: Tatsuki Fujimoto</h6>
+                    <h6 class="card-text">Studio: MAPPA</h6>
+                    <h6 class="card-text">Gender : Action, Dark fantasy, Horror comedy</h6>
+                    <h6 class="card-text">Audo: Subtitled & Dubled</h6>
+                    <h6 class="card-text">Duraction: 23min/Ep</h6>
+                    <h6 class="card-text">Status: awaiting</h6>
+                    <p class="card-text"> <b>Synopsis:</b>The story takes place in a world where demons are born from
+                        human fears. Although they are generally dangerous and malevolent, humans can form contracts
+                        with demons to use a portion of their power. Denji is a depressed young man who is trying to pay
+                        off his late father's debt to the yakuza by selling several of his organs and working as a demon
+                        hunter. Denji also has a dog demon named Pochita, who resembles a codegeass and assists Denji in
+                        his work. Denji is tasked by the Yakuza with killing a demon, but discovers a plot by the yakuza
+                        to let the demon kill him in exchange for his help. Denji is killed and Pochita seriously
+                        injured, but the two had already made a deal that allows Pochita to fuse with Denji, reviving
+                        him as a human-demon hybrid with Pochita's codegeass ability. Denji kills the demon that killed
+                        him and is approached by a team of government demon hunters. As he has now partially become a
+                        demon, one of the team members, Makima, convinces Denji to become part of his demon hunting
+                        organization to avoid being hunted by them.</p>
+                </div>
+            </div>
+            <div class="card-footer bg-secondary">
+                <a style="font-size: x-large;" class="text-warning text-decoration-none p-1" href=""><i
+                        class="bi bi-cloud-arrow-down"></i>Sub</a>
+                <a style="font-size: x-large;" class="text-warning text-decoration-none p-1" href=""><i
+                        class="bi bi-cloud-arrow-down"></i>Dub</a>
+                <a style="font-size: x-large;" class="text-warning text-decoration-none p-1" href=""><i
+                        class="bi bi-cloud-arrow-down"></i>Mangá</a>
+            </div>
+        </div>
+    </div>
+    <div class="mx-3 accordion card-group m-1 row-cols m-auto" >
+        <div class="card bg-black accordion-item col-5 m-1 d-sm-block border-black d-sm-block rounded w-100">
+            <div class="accordion-header">
+                <img   style="height: 300px;" src="img/akame.jpeg" alt="" class="card-img-top">
+                <h3 style="font-size: x-large;color: rgb(20, 238, 176);" class="bg-secondary accordion-button collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#akame">Akame Ga Kill</h3>
+            </div>
+
+            <div class="accordion-collapse collapse" id="akame" >
+                <div class="accordion-body bg-dark-subtle">
+                    <h6 class="card-text">Year: 1998 </h6>
+                    <h6 class="card-text">Author: Eiichiro Oda </h6>
+                    <h6 class="card-text">Studio: Toei Animation, FUNimation Entertainment, Fuji TV, 4Kids
+                        Entertainment, TAP, Asatsu DK, Magic Bus, Mushi Productions, Studio Guts, Asahi Production
+                    </h6>
+                    <h6 class="card-text">Gender : Action, Adventure, Comedy, Drama, Fantasy
+                    </h6>
+                    <h6 class="card-text">Year: 2014</h6>
+                    <h6 class="card-text">Author: Takahiro/h6>
+                    <h6 class="card-text">Studio: white Fox</h6>
+                    <h6 class="card-text">Gender : Fantasy, Action, Tragedy </h6>
+                    <h6 class="card-text">Audo: Subtitled & Dubled</h6>
+                    <h6 class="card-text">Duraction: 23min/Ep</h6>
+                    <h6 class="card-text">Status: Launching</h6>
+                      <p class="card-text"> <b>Synopsis:</b>The story focuses on Tatsumi, a young villager who travels to the Capital to raise money for his home only to discover strong corruption in the area. The assassin group known as Night Raid recruits the young man to help them in their fight against the corrupt Empire. Akame ga Kill! on their fight their group find their selves in a biug tragedy </p>
+                    
+
+                </div>
+            </div>
+            <div class="card-footer bg-secondary">
+                <a style="font-size: x-large;" class="text-warning text-decoration-none p-1" href=""><i
+                        class="bi bi-cloud-arrow-down"></i>Sub</a>
+                <a style="font-size: x-large;" class="text-warning text-decoration-none p-1" href=""><i
+                        class="bi bi-cloud-arrow-down"></i>Dub</a>
+                <a style="font-size: x-large;" class="text-warning text-decoration-none p-1" href=""><i
+                        class="bi bi-cloud-arrow-down"></i>Mangá</a>
+            </div>
+        </div>
+
+        <div class="card bg-black accordion-item col-5 m-1 border-black rounded d-sm-block w-100">
+            <div class="accordion-header">
+                <img style="height: 300px;"  src="img/Eshadow.jpg" alt="" class="card-img-top">
+                <h3 style="font-size: x-large;color: rgb(20, 238, 176);" class="bg-secondary accordion-button collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#shadow">Fire Force</h3>
+            </div>
+
+            <div class="accordion-collapse collapse" id="shadow" >
+                <div class="accordion-body bg-dark-subtle">
+                    <h6 class="card-text">Year: 2022</h6>
+                    <h6 class="card-text">Author: Kanichi Katou</h6>
+                    <h6 class="card-text">Studio: Nexus</h6>
+                    <h6 class="card-text">Gender :  Dark fantasy, Fantasy comedy, Isekai </h6>
+                    <h6 class="card-text">Audo: Subtitled & Dubled</h6>
+                    <h6 class="card-text">Duraction: 23min/Ep</h6>
+                    <h6 class="card-text">Status: awaiting</h6>
+                      <p class="card-text"> <b>Synopsis:</b> In modern-day Japan, a boy named Minoru Kageno aspires to be a mastermind, exerting power from the shadows. During his clandestine training, an unforeseen accident occurs when he gets hit by a truck, leading to his untimely demise. To his surprise, he finds himself reborn in a fantastical realm as Cid Kagenou. Here, he decides to maintain a facade of mediocrity, intentionally avoiding the limelight while secretly nurturing his dream of orchestrating power from behind the scenes.
         
-        <div class=" accordion-collapse collapse card-body bg-dark-subtle" id="fireforce">
-            <h6 class="card-text">Year: 2015</h6>
-            <h6 class="card-text">Author: Atsushi Ōkubo</h6>
-            <h6 class="card-text">Studio: David Production</h6>
-            <h6 class="card-text">Gender : Action, Drama, Supernatural </h6>
-            <h6 class="card-text">Audo: Subtitled & Dubled</h6>
-            <h6 class="card-text">Duraction: 23min/Ep</h6>
-            <h6 class="card-text">Status: awaiting</h6>
-              <p class="card-text"> <b>Synopsis:</b> At some point, I don't specify, the planet's sea level rose causing the disappearance of many countries. In the year 198 of the Solar Era in Tokyo, special fire brigades, called "Fire Force", combat increasing incidents of spontaneous human combustion, where human beings are transformed into living hells, called "Infernals"
+                        As Cid goes about his life in this new world, he encounters an elven girl suffering from a mysterious ailment. Putting his acquired knowledge to use, Cid successfully cures her. Seizing the opportunity, he weaves a tale for the elf, now named Alpha, claiming that this world is under the control of the nefarious Cult of Diablos. Cid, under the guise of Shadow, the leader of the clandestine organization Shadow Garden, assures Alpha that they possess the means to defeat the cult and restore peace to the land.
+                        
+                        With newfound purpose, Alpha becomes an enthusiastic member of Shadow Garden, taking on the role of a recruiter and aiding Cid in expanding their influence. Unbeknownst to her, Cid's fabricated power struggle is not mere fiction; it is a harsh reality that he, as Shadow, is now actively engaged in. Under the alias, he navigates the complex web of political intrigue and magical conflicts, fighting against the very forces he had initially only pretended existed.
+                        
+                        As Shadow, Cid finds himself increasingly entangled in the conflicts of the fantasy world, with the lines between his fabricated story and the actual struggles blurring. The once-aspiring mastermind now faces the challenge of living up to the role he created and leading Shadow Garden in the fight against the genuine threats posed by the Cult of Diablos.</p>        
 
-                While the Infernals are beings without consciousness called the first generation, the later generations are people who have the ability to pyrokinesis, who are able to maintain their human form. The second generation has the ability to control fire, while the third generation can emit flames in parts of their body.[citation needed]
-                
-                The Fire Force was formed by the combination of people with these powers from the Temple of the Holy Sun, the Tokyo Armed Forces and the Fire Defense Agency, and is made up of eight independent companies.Cap. 9
-                
-                Shinra Kusakabe is a young third-generation pyrokinetic who earned the nickname "Devil's Footprints" for having the ability to ignite fire in his feet. He joins the 8th Special Fire Company. His dream is to become a hero and save people from combustion, a goal he acquired after the death of his mother and younger brother following a fire in their house where Shinra was found guilty of their deaths</p>
-            
+                </div>
+            </div>
+            <div class="card-footer bg-secondary">
+                <a style="font-size: x-large;" class="text-warning text-decoration-none p-1" href=""><i
+                        class="bi bi-cloud-arrow-down"></i>Sub</a>
+                <a style="font-size: x-large;" class="text-warning text-decoration-none p-1" href=""><i
+                        class="bi bi-cloud-arrow-down"></i>Dub</a>
+                <a style="font-size: x-large;" class="text-warning text-decoration-none p-1" href=""><i
+                        class="bi bi-cloud-arrow-down"></i>Mangá</a>
+            </div>
         </div>
-        <div class="card-footer bg-secondary">
-            <a style="font-size: x-large;" class="text-warning text-decoration-none p-1   " href=""><i class=" bi-cloud-arrow-down"></i>Sub</a>
-            <a style="font-size: x-large;" class="text-warning text-decoration-none p-1   " href=""><i class=" bi-cloud-arrow-down"></i>Dub</a>
-            <a style="font-size: x-large;" class="text-warning text-decoration-none p-1   " href=""><i class=" bi-cloud-arrow-down"></i>Mangá</a>
+
+        <div class="card bg-black accordion-item col-5 m-1 border-black rounded d-sm-block w-100">
+            <div class="accordion-header">
+                <img  style="height: 300px;"  src="img/naruto.jpg" alt="" class="card-img-top">
+                <h3 style="font-size: x-large;color: rgb(20, 238, 176);" class="bg-secondary accordion-button collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#naruto">Naruto Shippuden</h3>
+            </div>
+
+            <div class="accordion-collapse collapse" id="naruto" >
+                <div class="accordion-body bg-dark-subtle">
+                    <h6 class="card-text">Year: 2002</h6>
+                    <h6 class="card-text">Author: 	Masashi Kishimoto</h6>
+                    <h6 class="card-text">Studio: TV Tokyo</h6>
+                    <h6 class="card-text">Gender :Adventure, comedy-drama, fantasy</h6>
+                    <h6 class="card-text">Audo: Subtitled & Dubled</h6>
+                    <h6 class="card-text">Duraction: 23min/Ep</h6>
+                    <h6 class="card-text">Status: Finished</h6>
+                      <p class="card-text"> <b>Synopsis:</b> The main story focuses on Naruto and his development as a ninja, along with his friends. It also focuses on the interactions between them and the influence of the environment on their personalities. As the series progresses, Naruto forms a relationship with Sasuke Uchiha and Sakura Haruno, with whom he forms “Team 7”, along with sensei Kakashi Hatake. It is worth mentioning that Naruto trusts them a lot, as well as other characters he will meet later. As they learn new skills and meet new people and places on their missions, Naruto fights for his dream of becoming his village's top leader (Hokage) and being recognized as someone important. At the beginning, the series focuses on the members of Team 7, Naruto, Sasuke and Sakura. Shortly afterwards, Orochimaru (one of the most wanted villains) attacks the Hidden Leaf Village, murdering the Third Hokage in an act of personal revenge. This ends up triggering Jiraiya, one of the three legendary ninjas (Sannins),[9] to begin the search for his former teammate Tsunade to designate her as the Fifth Hokage.</p>
+
+                </div>
+            </div>
+            <div class="card-footer bg-secondary">
+                <a style="font-size: x-large;" class="text-warning text-decoration-none p-1" href=""><i
+                        class="bi bi-cloud-arrow-down"></i>Sub</a>
+                <a style="font-size: x-large;" class="text-warning text-decoration-none p-1" href=""><i
+                        class="bi bi-cloud-arrow-down"></i>Dub</a>
+                <a style="font-size: x-large;" class="text-warning text-decoration-none p-1" href=""><i
+                        class="bi bi-cloud-arrow-down"></i>Mangá</a>
+            </div>
+        </div>
+
+        <div class="card bg-black accordion-item col-5 m-1 border-black rounded d-sm-block w-100">
+            <div class="accordion-header">
+                <img  style="height: 300px;"  src="img/codegeass.jpg" alt="" class="card-img-top">
+                <h3 style="font-size: x-large;color: rgb(20, 238, 176);" class="bg-secondary accordion-button collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#codegeass">Code Geass</h3>
+            </div>
+
+            <div class="accordion-collapse collapse" id="codegeass" >
+                <div class="accordion-body bg-dark-subtle">
+                    <h6 class="card-text">Year: 2007</h6>
+                    <h6 class="card-text">Author: Gorō Taniguchi & Ichirō Ōkouchi</h6>
+                    <h6 class="card-text">Studio: Sunrise</h6>
+                    <h6 class="card-text">Gender :  	
+                        Alternate history, Mecha, Military</h6>
+                    <h6 class="card-text">Audo: Subtitled & Dubled</h6>
+                    <h6 class="card-text">Duraction: 23min/Ep</h6>
+                    <h6 class="card-text">Status: awaiting</h6>
+                      <p class="card-text"> <b>Synopsis:</b>In an alternative timeline, the world is divided into three superpowers (similar to the world of Nineteen Eighty-Four by George Orwell): the Holy Britannian Empire (the Americas; also called Britannia), the Chinese Federation (Asia), and the Europa United (Europe and Africa). The story takes place after the Holy Britannian Empire's conquest of Japan on August 10, 2010, a.t.b., by means of Britannia's newest weapon, the "Autonomous Armored Knight," or "Knightmare Frame." In turn, Britannia effectively strips Japan and its citizens of all rights and freedoms and renames the country Area 11, with its citizens referred to as Elevens...</p>
+                    
+                </div>
+            </div>
+            <div class="card-footer bg-secondary">
+                <a style="font-size: x-large;" class="text-warning text-decoration-none p-1" href=""><i
+                        class="bi bi-cloud-arrow-down"></i>Sub</a>
+                <a style="font-size: x-large;" class="text-warning text-decoration-none p-1" href=""><i
+                        class="bi bi-cloud-arrow-down"></i>Dub</a>
+                <a style="font-size: x-large;" class="text-warning text-decoration-none p-1" href=""><i
+                        class="bi bi-cloud-arrow-down"></i>Mangá</a>
+            </div>
         </div>
     </div>
-    <div class="card bg-black accordion-item col-5 m-1 border-black rounded d-sm-block w-100">
-        <img  style="height: 300px;"  src="img/dbs.jpeg" alt="" class="card-img-top">
-        <h3 style="font-size: x-large;color: rgb(20, 238, 176);" class="card-header bg-secondary accordion-button collapsed " data-bs-toggle="collapse" data-bs-target="#dbs" type="button">Dragon Ball Super</h3>
-        
-        <div class=" accordion-collapse collapse card-body bg-dark-subtle" id="dbs">
-            <h6 class="card-text">Year: 2015</h6>
-            <h6 class="card-text">Author: Akira Toriyama</h6>
-            <h6 class="card-text">Studio: Toei Animation</h6>
-            <h6 class="card-text">Gender : Action, martial arts, adventure, comedy, science fantasy </h6>
-            <h6 class="card-text">Audo: Subtitled & Dubled</h6>
-            <h6 class="card-text">Duraction: 23min/Ep</h6>
-            <h6 class="card-text">Status: Finished</h6>
-              <p class="card-text"> <b>Synopsis:</b> Dragon Ball Super follows the adventures of protagonist Goku and his friends, after defeating Majin Buu and bringing peace to Earth once again.[9][10] Goku encounters far more powerful beings and achieves the power of a god. He defends Earth against powerful, destructive deities and travels to other universes to face more powerful opponents, as well as nearly unstoppable enemies, while discovering his new powers under the universe's gods.</p>
-            
-        </div>
-        <div class="card-footer bg-secondary">
-            <a style="font-size: x-large;" class="text-warning text-decoration-none p-1   " href=""><i class=" bi-cloud-arrow-down"></i>Sub</a>
-            <a style="font-size: x-large;" class="text-warning text-decoration-none p-1   " href=""><i class=" bi-cloud-arrow-down"></i>Dub</a>
-            <a style="font-size: x-large;" class="text-warning text-decoration-none p-1   " href=""><i class=" bi-cloud-arrow-down"></i>Mangá</a>
-        </div>
+    <div class="container mt-5">
+        <nav aria-label="Page navigation example" class="bg-black">
+            <ul class="pagination justify-content-center mb-0">
+                <button class="page-item btn btn-outline-secondary"> <a class="page-link btn btn-outline-secondary  text-white bg-black " href="#">Próximo</a>
+                <button class="page-item btn btn-outline-secondary active" aria-current="page">
+                    <a class="page-link bg-black btn btn-outline-secondary bg-secondary text-white">1</a>
+                </button>
+                <button class="page-item btn btn-outline-secondary"><a class="page-link  btn btn-outline-secondary text-white bg-black" href="#">2</a></button>
+                <button class="page-item btn btn-outline-secondary"><a class="page-link  btn btn-outline-secondary text-white bg-black" href="#">3</a></button>
+                <button class="page-item btn btn-outline-secondary"><a class="page-link  btn btn-outline-secondary text-white bg-black" href="#">4</a></button>
+                <button class="page-item btn btn-outline-secondary"><a class="page-link  btn btn-outline-secondary text-white bg-black" href="#">5</a></button>
+                <button class="page-item btn btn-outline-secondary"><a class="page-link  btn btn-outline-secondary text-white bg-black" href="#">6</a></button>
+                <button class="page-item btn btn-outline-secondary"><a class="page-link  btn btn-outline-secondary text-white bg-black" href="#">7</a></button>
+                <button class="page-item btn btn-outline-secondary"><a class="page-link  btn btn-outline-secondary text-white bg-black" href="#">8</a></button>
+                <button class="page-item btn btn-outline-secondary"><a class="page-link  btn btn-outline-secondary text-white bg-black" href="#">9</a></button>
+                <button class="page-item btn btn-outline-secondary"><a class="page-link  btn btn-outline-secondary text-white bg-black" href="#">10</a></button>
+                <button class="page-item btn btn-outline-secondary"> <a class="page-link btn btn-outline-secondary  text-white bg-black " href="#">Próximo</a>
+                </button>
+            </ul>
+        </nav>
+        <p class="text-center mt-3 text-white bg-dark p-2 rounded">You're in page 1 </p>
     </div>
-    <div class="card bg-black accordion-item col-5 m-1 border-black rounded d-sm-block w-100">
-        <img  style="height: 300px;"  src="img/chainsaw.webp" alt="" class="card-img-top">
-        <h3 style="font-size: x-large;color: rgb(20, 238, 176);" class="card-header bg-secondary accordion-button collapsed " data-bs-toggle="collapse" data-bs-target="#chainsaw" type="button">Chainsaw Man</h3>
-        
-        <div class=" accordion-collapse collapse card-body bg-dark-subtle" id="chainsaw">
-            <h6 class="card-text">Year: 2022</h6>
-            <h6 class="card-text">Author:  Tatsuki Fujimoto</h6>
-            <h6 class="card-text">Studio: MAPPA</h6>
-            <h6 class="card-text">Gender :  Action, Dark fantasy, Horror comedy</h6>
-            <h6 class="card-text">Audo: Subtitled & Dubled</h6>
-            <h6 class="card-text">Duraction: 23min/Ep</h6>
-            <h6 class="card-text">Status: awaiting</h6>
-              <p class="card-text"> <b>Synopsis:</b>The story takes place in a world where demons are born from human fears. Although they are generally dangerous and malevolent, humans can form contracts with demons to use a portion of their power. Denji is a depressed young man who is trying to pay off his late father's debt to the yakuza by selling several of his organs and working as a demon hunter. Denji also has a dog demon named Pochita, who resembles a chainsaw and assists Denji in his work. Denji is tasked by the Yakuza with killing a demon, but discovers a plot by the yakuza to let the demon kill him in exchange for his help. Denji is killed and Pochita seriously injured, but the two had already made a deal that allows Pochita to fuse with Denji, reviving him as a human-demon hybrid with Pochita's chainsaw ability. Denji kills the demon that killed him and is approached by a team of government demon hunters. As he has now partially become a demon, one of the team members, Makima, convinces Denji to become part of his demon hunting organization to avoid being hunted by them.</p>
-            
-        </div>
-        <div class="card-footer bg-secondary">
-            <a style="font-size: x-large;" class="text-warning text-decoration-none p-1   " href=""><i class=" bi-cloud-arrow-down"></i>Sub</a>
-            <a style="font-size: x-large;" class="text-warning text-decoration-none p-1   " href=""><i class=" bi-cloud-arrow-down"></i>Dub</a>
-            <a style="font-size: x-large;" class="text-warning text-decoration-none p-1   " href=""><i class=" bi-cloud-arrow-down"></i>Mangá</a>
-        </div>
-    </div>
-</div>
-</div>
-</div>
-<div class="mx-3 accordion  card-group  m-1 row-cols m-auto">
-    <div class="card bg-black  accordion-item col-5 m-1 d-sm-block border-black d-sm-block rounded  w-100">
-        <img   style="height: 300px;" src="img/akame.jpeg" alt="" class="card-img-top">
-        <h3 style="font-size: x-large;color: rgb(20, 238, 176);" class="bg-secondary accordion-header accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#akame" >Akame ga Kill
 
-        </h3>
-         
-        <div class=" accordion-body accordion-collapse collapse bg-dark-subtle " id="akame">
-            <h6 class="card-text">Year: 2014</h6>
-            <h6 class="card-text">Author: Takahiro/h6>
-            <h6 class="card-text">Studio: white Fox</h6>
-            <h6 class="card-text">Gender : Fantasy, Action, Tragedy </h6>
-            <h6 class="card-text">Audo: Subtitled & Dubled</h6>
-            <h6 class="card-text">Duraction: 23min/Ep</h6>
-            <h6 class="card-text">Status: Launching</h6>
-              <p class="card-text"> <b>Synopsis:</b>The story focuses on Tatsumi, a young villager who travels to the Capital to raise money for his home only to discover strong corruption in the area. The assassin group known as Night Raid recruits the young man to help them in their fight against the corrupt Empire. Akame ga Kill! on their fight their group find their selves in a biug tragedy </p>
-            
+    <footer style=" margin:auto; box-shadow: 10px 0px 20px 10px rgb(44, 44, 44); border-radius: 20px 20px 0px 0px;"
+        class="mt-5">
+        <div style="margin:auto;"
+            class="container d-sm-block d-lg-flex d-xl-flex text-white text-center row row-cols-12">
+            <div class="container-fluid d-inline m-2 divf col">
+                <h5>Contacts</h5>
+                <a href="" class="text-info">CentralAnimes258@gmail.com</a>
+                <br>
+                <p> +258 84 891 7702 <br> <i class="bi bi-telephone"></i>+258 82 242 2782 <br> +258 85 112 6778</p>
+                <p> <i class="bi bi-house-door-fill me-2"></i> <br>Mozambique, Maputo- Matola <br>
+                    Khongolote Av nr 261</p>
+                <div style="align-items: center;justify-content: center;padding: 2px;"
+                    class="container-fluid d-block d-flex p-text-center">
+                    <i style="font-size: 22px; padding-right: 20px;" class="bi bi-whatsapp text-success text-lg"></i>
+                    <i style="font-size: 22px;padding-right: 20px" class="bi bi-facebook text-primary"></i>
+                    <i style="font-size: 22px;padding-right: 20px" class="bi bi-youtube text-danger"></i>
+                    <i style="font-size: 22px;padding-right: 20px" class="bi bi-telegram text-info"></i>
+                </div>
+            </div>
+            <div class="container-fluid d-inline m-2 divf col">
+                <h5>Partners</h5>
+                Casa da Cienciab <br>
+                Central dos Visionarios <br>
+                the Best Quality Services <br>
+                <p>Joffrey' Softwares ltd & ATD </p>
+            </div>
+            <div class="container-fluid d-inline m-2 divf col">
+                <h5>Works</h5>
+                <br>
+                <a href="" class="text-info">Joffreys Hub</a><br>
+                <a href="" class="text-info">internacional music Hub</a><br>
+                <a href="" class="text-info">Mz Sequestros</a>
+            </div>
+            <div class="container-fluid d-inline m-1 divf col">
+                <h5>Documentation</h5>
+                <br>
+                <a href="" class="text-info"><i class="bi bi-bootstrap"></i>Bootstrao 5.2.</a><br <a href=""
+                    class="text-info"> <i class="bi bi-filetype-html"></i>Html</a><br>
+                <a href="" class="text-info"><i class="bi bi-filetype-css"></i>CSS</a><br>
+                <a href="" class="text-info"><i class="bi bi-filetype-js"></i>Java Script</a><br>
+                <a href="" class="text-info"><i class="bi bi-filetype-js"></i>Download</a><br>
+                <a href="" class="text-info"><i class="bi bi-filetype-js"></i>App</a><br>
+            </div>
         </div>
-        <div class="card-footer bg-secondary">
-            <a style="font-size: x-large;" class="text-warning text-decoration-none p-1   " href=""><i class=" bi-cloud-arrow-down"></i>Sub</a>
-            <a style="font-size: x-large;" class="text-warning text-decoration-none p-1   " href=""><i class=" bi-cloud-arrow-down"></i>Dub</a>
-            <a style="font-size: x-large;" class="text-warning text-decoration-none p-1   " href=""><i class=" bi-cloud-arrow-down"></i>Mangá</a>
+        <div style="text-align: center; justify-content: center;" class="container text-warning d-flex"> Made,
+            engeneerd, powered by Joffrey's Softwares LTD</div>
+        <div style="text-align: center; justify-content: center;" class="container text-white d-flex">
+            <h4>©</h4> All Rights reserved
         </div>
-    </div>
-    
-<div class="card bg-black accordion-item col-5 m-1 border-black rounded d-sm-block w-100">
-        <img style="height: 300px;"  src="img/Eshadow.jpg" alt="" class="card-img-top">
-        <h3 style="font-size: x-large;color: rgb(20, 238, 176);" class="card-header bg-secondary accordion-button collapsed " data-bs-toggle="collapse" data-bs-target="#shadow" type="button">Kage no Jitsuryokusha</h3>
-        
-        <div class=" accordion-collapse collapse card-body bg-dark-subtle" id="shadow">
-            <h6 class="card-text">Year: 2022</h6>
-            <h6 class="card-text">Author: Kanichi Katou</h6>
-            <h6 class="card-text">Studio: Nexus</h6>
-            <h6 class="card-text">Gender :  Dark fantasy, Fantasy comedy, Isekai </h6>
-            <h6 class="card-text">Audo: Subtitled & Dubled</h6>
-            <h6 class="card-text">Duraction: 23min/Ep</h6>
-            <h6 class="card-text">Status: awaiting</h6>
-              <p class="card-text"> <b>Synopsis:</b> In modern-day Japan, a boy named Minoru Kageno aspires to be a mastermind, exerting power from the shadows. During his clandestine training, an unforeseen accident occurs when he gets hit by a truck, leading to his untimely demise. To his surprise, he finds himself reborn in a fantastical realm as Cid Kagenou. Here, he decides to maintain a facade of mediocrity, intentionally avoiding the limelight while secretly nurturing his dream of orchestrating power from behind the scenes.
-
-                As Cid goes about his life in this new world, he encounters an elven girl suffering from a mysterious ailment. Putting his acquired knowledge to use, Cid successfully cures her. Seizing the opportunity, he weaves a tale for the elf, now named Alpha, claiming that this world is under the control of the nefarious Cult of Diablos. Cid, under the guise of Shadow, the leader of the clandestine organization Shadow Garden, assures Alpha that they possess the means to defeat the cult and restore peace to the land.
-                
-                With newfound purpose, Alpha becomes an enthusiastic member of Shadow Garden, taking on the role of a recruiter and aiding Cid in expanding their influence. Unbeknownst to her, Cid's fabricated power struggle is not mere fiction; it is a harsh reality that he, as Shadow, is now actively engaged in. Under the alias, he navigates the complex web of political intrigue and magical conflicts, fighting against the very forces he had initially only pretended existed.
-                
-                As Shadow, Cid finds himself increasingly entangled in the conflicts of the fantasy world, with the lines between his fabricated story and the actual struggles blurring. The once-aspiring mastermind now faces the challenge of living up to the role he created and leading Shadow Garden in the fight against the genuine threats posed by the Cult of Diablos.</p>
-            
-        </div>
-        <div class="card-footer bg-secondary">
-            <a style="font-size: x-large;" class="text-warning text-decoration-none p-1   " href=""><i class=" bi-cloud-arrow-down"></i>Sub</a>
-            <a style="font-size: x-large;" class="text-warning text-decoration-none p-1   " href=""><i class=" bi-cloud-arrow-down"></i>Dub</a>
-            <a style="font-size: x-large;" class="text-warning text-decoration-none p-1   " href=""><i class=" bi-cloud-arrow-down"></i>Mangá</a>
-        </div>
-    </div>
-    <div class="card bg-black accordion-item col-5 m-1 border-black rounded d-sm-block w-100">
-        <img  style="height: 300px;"  src="img/naruto.jpg" alt="" class="card-img-top">
-        <h3 style="font-size: x-large;color: rgb(20, 238, 176);" class="card-header bg-secondary accordion-button collapsed " data-bs-toggle="collapse" data-bs-target="#naruto" type="button">Naruto Shippuden</h3>
-        
-        <div class=" accordion-collapse collapse card-body bg-dark-subtle" id="naruto">
-            <h6 class="card-text">Year: 2002</h6>
-            <h6 class="card-text">Author: 	Masashi Kishimoto</h6>
-            <h6 class="card-text">Studio: TV Tokyo</h6>
-            <h6 class="card-text">Gender :Adventure, comedy-drama, fantasy</h6>
-            <h6 class="card-text">Audo: Subtitled & Dubled</h6>
-            <h6 class="card-text">Duraction: 23min/Ep</h6>
-            <h6 class="card-text">Status: Finished</h6>
-              <p class="card-text"> <b>Synopsis:</b> The main story focuses on Naruto and his development as a ninja, along with his friends. It also focuses on the interactions between them and the influence of the environment on their personalities. As the series progresses, Naruto forms a relationship with Sasuke Uchiha and Sakura Haruno, with whom he forms “Team 7”, along with sensei Kakashi Hatake. It is worth mentioning that Naruto trusts them a lot, as well as other characters he will meet later. As they learn new skills and meet new people and places on their missions, Naruto fights for his dream of becoming his village's top leader (Hokage) and being recognized as someone important. At the beginning, the series focuses on the members of Team 7, Naruto, Sasuke and Sakura. Shortly afterwards, Orochimaru (one of the most wanted villains) attacks the Hidden Leaf Village, murdering the Third Hokage in an act of personal revenge. This ends up triggering Jiraiya, one of the three legendary ninjas (Sannins),[9] to begin the search for his former teammate Tsunade to designate her as the Fifth Hokage.</p>
-            
-        </div>
-        <div class="card-footer bg-secondary">
-            <a style="font-size: x-large;" class="text-warning text-decoration-none p-1   " href=""><i class=" bi-cloud-arrow-down"></i>Sub</a>
-            <a style="font-size: x-large;" class="text-warning text-decoration-none p-1   " href=""><i class=" bi-cloud-arrow-down"></i>Dub</a>
-            <a style="font-size: x-large;" class="text-warning text-decoration-none p-1   " href=""><i class=" bi-cloud-arrow-down"></i>Mangá</a>
-        </div>
-    </div>
-    <div class="card bg-black accordion-item col-5 m-1 border-black rounded d-sm-block w-100">
-        <img  style="height: 300px;"  src="img/codegeass.jpg" alt="" class="card-img-top">
-        <h3 style="font-size: x-large;color: rgb(20, 238, 176);" class="card-header bg-secondary accordion-button collapsed " data-bs-toggle="collapse" data-bs-target="#codegeass" type="button">Code Geass</h3>
-        
-        <div class=" accordion-collapse collapse card-body bg-dark-subtle" id="codegeass">
-            <h6 class="card-text">Year: 2007</h6>
-            <h6 class="card-text">Author: Gorō Taniguchi & Ichirō Ōkouchi</h6>
-            <h6 class="card-text">Studio: Sunrise</h6>
-            <h6 class="card-text">Gender :  	
-                Alternate history, Mecha, Military</h6>
-            <h6 class="card-text">Audo: Subtitled & Dubled</h6>
-            <h6 class="card-text">Duraction: 23min/Ep</h6>
-            <h6 class="card-text">Status: awaiting</h6>
-              <p class="card-text"> <b>Synopsis:</b>In an alternative timeline, the world is divided into three superpowers (similar to the world of Nineteen Eighty-Four by George Orwell): the Holy Britannian Empire (the Americas; also called Britannia), the Chinese Federation (Asia), and the Europa United (Europe and Africa). The story takes place after the Holy Britannian Empire's conquest of Japan on August 10, 2010, a.t.b., by means of Britannia's newest weapon, the "Autonomous Armored Knight," or "Knightmare Frame." In turn, Britannia effectively strips Japan and its citizens of all rights and freedoms and renames the country Area 11, with its citizens referred to as Elevens...</p>
-            
-        </div>
-        <div class="card-footer bg-secondary">
-            <a style="font-size: x-large;" class="text-warning text-decoration-none p-1   " href=""><i class=" bi-cloud-arrow-down"></i>Sub</a>
-            <a style="font-size: x-large;" class="text-warning text-decoration-none p-1   " href=""><i class=" bi-cloud-arrow-down"></i>Dub</a>
-            <a style="font-size: x-large;" class="text-warning text-decoration-none p-1   " href=""><i class=" bi-cloud-arrow-down"></i>Mangá</a>
-        </div>
-    </div>
-</div>
-</div>
-</div>
-
-
-
-    <footer style=" margin:auto; box-shadow: 10px 0px 20px 10px rgb(44, 44, 44); border-radius: 20px 20px 0px 0px;" class="  mt-5 ">
-      <div style="margin:auto;" class="container d-sm-block  d-lg-flex d-xl-flex text-white text-center  row row-cols-12  ">
-        <div  class="container-fluid d-inline m-2 divf col " >
-            <h5>Contacts</h5>
-           <a href="" class="text-info " >CentralAnimes258@gmail.com</a>
-           <br>
-           <p> +258 84 891 7702 <br> <i class="bi bi-telephone"></i>+258 82 242 2782 <br> +258 85 112 6778</p>
-           <p> <i class="bi bi-house-door-fill me-2"></i> <br>Mozambique, Maputo- Matola <br>
-        Khongolote Av nr 261</p>
-        <div  style="align-items: center;justify-content: center;padding: 2px;"  class="container-fluid d-block d-flex p- text-center">
-            <i style="font-size: 22px; padding-right: 20px;" class="bi bi-whatsapp text-success text-lg"></i>
-            <i style="font-size: 22px;padding-right: 20px" class="bi bi-facebook text-primary"></i>
-            <i style="font-size: 22px;padding-right: 20px" class="bi bi-youtube text-danger"></i>
-            <i style="font-size: 22px;padding-right: 20px" class="bi bi-telegram text-info"></i>
-        </div>
-        </div>
-        <div  class="container-fluid d-inline m-2 divf col ">
-            <h5>Partners</h5>
-        Casa da Cienciab <br>
-        Central dos Visionarios <br>
-        the Best Quality Services <br>
-        <p>Joffrey' Softwares ltd & ATD </p>
-       
-        </div>
-        <div  class="container-fluid d-inline m-2 divf col ">
-            <h5>Works</h5>
-            <br>
-            <a href="" class="text-info ">Joffreys Hub</a><br>
-            <a href="" class="text-info ">internacional music  Hub</a><br>
-            <a href="" class="text-info ">Mz Sequestros</a>
-        </div>
-        <div class="container-fluid d-inline m-1 divf col ">
-            <h5>Documentation</h5>
-            <br>
-           
-            <a href="" class="text-info  "><i class="bi bi-bootstrap"></i>Bootstrao 5.2.</a><br>
-            <a href="" class="text-info  "> <i class="bi bi-filetype-html "></i>Html</a><br>
-            <a href="" class="text-info  "><i class="bi bi-filetype-css"></i>CSS</a><br>
-            <a href="" class="text-info  "><i class="bi bi-filetype-js"></i>Java Script</a><br>
-            <a href="" class="text-info  "><i class="bi bi-filetype-js"></i>Download</a><br>
-            <a href="" class="text-info "><i class="bi bi-filetype-js"></i>App</a><br>
-        </div>
-      </div>
-      <div style="text-align: center; justify-content: center; " class="container text-warning d-flex"> Made, engeneerd, powered by Joffrey's Softwares LTD</div>
-      <div style="text-align: center; justify-content: center; " class="container text-white  d-flex"> <h4 >©</h4> All Rights reserved </div>
-
     </footer>
-   
-    <script src="js/bootstrap.bundle.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha284-YvpcrYf0tY2lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const accordionItems = document.querySelectorAll('.accordion-item');
+
+            accordionItems.forEach(item => {
+                const button = item.querySelector('.accordion-button');
+                const collapse = item.querySelector('.accordion-collapse');
+
+                button.addEventListener('click', function () {
+                    // Se já estiver aberto, fecha manualmente
+                    if (!button.classList.contains('collapsed')) {
+                        const bsCollapse = new bootstrap.Collapse(collapse, {
+                            toggle: false
+                        });
+                        bsCollapse.hide();
+                    }
+                });
+            });
+        });
+    </script>
 </body>
+
 </html>

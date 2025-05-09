@@ -2,10 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>C|A</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha284-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
 </head>
@@ -23,7 +22,13 @@
     .navbar{
         z-index: 1050;
     }
-   
+    .accordion-item {
+        margin-bottom: 10px;
+    }
+    .accordion-button:not(.collapsed) {
+        color: rgb(20, 238, 176);
+        background-color: #6c757d;
+    }
 </style>
 <body class="bg-black">
 
@@ -42,7 +47,7 @@
      <div class="collapse navbar-collapse  " id="menuNavbar">
        
     <div class="navbar-nav ">
-<a href="home.html" class="navbar-item btn btn-outline-light border border-black ms-3 "><i class="bi bi-house "></i>Home</a>
+<a href="index.html" class="navbar-item btn btn-outline-light border border-black ms-3 "><i class="bi bi-house "></i>Home</a>
 <div class="dropdown m-auto ">
 <a href="" class="navbar-item btn btn-outline-light border-black dropdown-toggle" data-bs-toggle="dropdown">Products</a>
 <ul class="dropdown-menu">
@@ -159,150 +164,174 @@
     <h4 class="my-2 p-1">/</h4>
     <h4 class="text-warning my-2 p-1">Dubled</h4>
 </div> 
-<div class="mx-3 accordion  card-group  m-1 row-cols m-auto">
-    <div class="card bg-black  accordion-item col-5 m-1 d-sm-block border-black d-sm-block rounded  w-100">
-        <img   style="height: 300px;" src="img/solo-leveling-s-jinwoo-and-the-statue-of-god.avif" alt="" class="card-img-top">
-        <h3 style="font-size: x-large;color: rgb(20, 238, 176);" class="bg-secondary accordion-header accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#soloLeveling" >Solo Leveling
-
-        </h3>
+<div class="mx-3 accordion card-group m-1 row-cols m-auto" id="animeAccordion">
+    <div class="card bg-black accordion-item col-5 m-1 d-sm-block border-black d-sm-block rounded w-100">
+        <div class="accordion-header">
+            <img style="height: 300px;" src="img/solo-leveling-s-jinwoo-and-the-statue-of-god.avif" alt="" class="card-img-top">
+            <h3 style="font-size: x-large;color: rgb(20, 238, 176);" class="bg-secondary accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#soloLeveling">Solo Leveling</h3>
+        </div>
          
-        <div class=" accordion-body accordion-collapse collapse bg-dark-subtle " id="soloLeveling">
-            <h6 class="card-text">Year: 2024</h6>
-            <h6 class="card-text">Author: Chu Gong</h6>
-            <h6 class="card-text">Studio: A-1 Pictures</h6>
-            <h6 class="card-text">Gender : Isekai, Action, overpower </h6>
-            <h6 class="card-text">Audo: Subtitled & Dubled</h6>
-            <h6 class="card-text">Duraction: 23min/Ep</h6>
-            <h6 class="card-text">Status: Launching</h6>
-              <p class="card-text"> <b>Synopsis:</b>More than a decade ago, a mysterious passage called "portal" appeared, which connects this world to a different dimension, which caused people to awaken unique powers... and these people are called "hunters". Hunters use their superhuman powers to conquer dungeons within the portals and thus earn a living. Sung Jinwoo, a low-level hunter, is considered the weakest hunter in all of humanity. One day, he comes across a "double dungeon", which has a high-level dungeon hidden inside a low-level dungeon. Faced with a seriously injured Jinwoo, a mysterious mission arises! On the verge of death, Jinwoo decides to accept this mission, thus becoming the only person capable of leveling up!</p>
-            
+        <div class="accordion-collapse collapse" id="soloLeveling" data-bs-parent="#animeAccordion">
+            <div class="accordion-body bg-dark-subtle">
+                <h6 class="card-text">Year: 2024</h6>
+                <h6 class="card-text">Author: Chu Gong</h6>
+                <h6 class="card-text">Studio: A-1 Pictures</h6>
+                <h6 class="card-text">Gender : Isekai, Action, overpower </h6>
+                <h6 class="card-text">Audio: Subtitled & Dubled</h6>
+                <h6 class="card-text">Duraction: 23min/Ep</h6>
+                <h6 class="card-text">Status: Launching</h6>
+                <p class="card-text"> <b>Synopsis:</b>More than a decade ago, a mysterious passage called "portal" appeared, which connects this world to a different dimension, which caused people to awaken unique powers... and these people are called "hunters". Hunters use their superhuman powers to conquer dungeons within the portals and thus earn a living. Sung Jinwoo, a low-level hunter, is considered the weakest hunter in all of humanity. One day, he comes across a "double dungeon", which has a high-level dungeon hidden inside a low-level dungeon. Faced with a seriously injured Jinwoo, a mysterious mission arises! On the verge of death, Jinwoo decides to accept this mission, thus becoming the only person capable of leveling up!</p>
+            </div>
         </div>
         <div class="card-footer bg-secondary">
-            <a style="font-size: x-large;" class="text-warning text-decoration-none p-1   " href=""><i class=" bi-cloud-arrow-down"></i>Sub</a>
-            <a style="font-size: x-large;" class="text-warning text-decoration-none p-1   " href=""><i class=" bi-cloud-arrow-down"></i>Dub</a>
-            <a style="font-size: x-large;" class="text-warning text-decoration-none p-1   " href=""><i class=" bi-cloud-arrow-down"></i>Mangá</a>
+            <a style="font-size: x-large;" class="text-warning text-decoration-none p-1" href=""><i class="bi bi-cloud-arrow-down"></i>Sub</a>
+            <a style="font-size: x-large;" class="text-warning text-decoration-none p-1" href=""><i class="bi bi-cloud-arrow-down"></i>Dub</a>
+            <a style="font-size: x-large;" class="text-warning text-decoration-none p-1" href=""><i class="bi bi-cloud-arrow-down"></i>Mangá</a>
         </div>
     </div>
     
-<div class="card bg-black accordion-item col-5 m-1 border-black rounded d-sm-block w-100">
-        <img style="height: 300px;"  src="img/4.webp" alt="" class="card-img-top">
-        <h3 style="font-size: x-large;color: rgb(20, 238, 176);" class="card-header bg-secondary accordion-button collapsed " data-bs-toggle="collapse" data-bs-target="#kimetsu" type="button">Kimetsu No Yaiba</h3>
-        
-        <div class=" accordion-collapse collapse card-body bg-dark-subtle" id="kimetsu">
-            <h6 class="card-text">Year: 2019</h6>
-            <h6 class="card-text">Author: Koyoharu Gotouge</h6>
-            <h6 class="card-text">Studio: Ufotable</h6>
-            <h6 class="card-text">Gender : Action, demons, supernatural, Shounen </h6>
-            <h6 class="card-text">Audo: Subtitled & Dubled</h6>
-            <h6 class="card-text">Duraction: 23min/Ep</h6>
-            <h6 class="card-text">Status: awaiting</h6>
-              <p class="card-text"> <b>Synopsis:</b> Tanjiro, a kind young man who makes a living selling coal, discovers that his family was massacred by a demon. And, to make matters worse, Nezuko, her younger sister and only survivor, also ended up transformed into a demon. And he joins the demon slayer squad and starts fighting and hunting oni to find the demon that transformed his sister, who is the original and oldest oni, to find the cure and transform his sister Kamado Nezuko back.</p>
-            
-        </div>
-        <div class="card-footer bg-secondary">
-            <a style="font-size: x-large;" class="text-warning text-decoration-none p-1   " href=""><i class=" bi-cloud-arrow-down"></i>Sub</a>
-            <a style="font-size: x-large;" class="text-warning text-decoration-none p-1   " href=""><i class=" bi-cloud-arrow-down"></i>Dub</a>
-            <a style="font-size: x-large;" class="text-warning text-decoration-none p-1   " href=""><i class=" bi-cloud-arrow-down"></i>Mangá</a>
-        </div>
-    </div>
     <div class="card bg-black accordion-item col-5 m-1 border-black rounded d-sm-block w-100">
-        <img  style="height: 300px;"  src="img/jujutsu-kaisen.jpg" alt="" class="card-img-top">
-        <h3 style="font-size: x-large;color: rgb(20, 238, 176);" class="card-header bg-secondary accordion-button collapsed " data-bs-toggle="collapse" data-bs-target="#jujutsu" type="button">jujutsu kaisen</h3>
+        <div class="accordion-header">
+            <img style="height: 300px;" src="img/4.webp" alt="" class="card-img-top">
+            <h3 style="font-size: x-large;color: rgb(20, 238, 176);" class="bg-secondary accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#kimetsu">Kimetsu No Yaiba</h3>
+        </div>
         
-        <div class=" accordion-collapse collapse card-body bg-dark-subtle" id="jujutsu">
-            <h6 class="card-text">Year: 2024</h6>
-            <h6 class="card-text">Author: Gege Akutami.</h6>
-            <h6 class="card-text">Studio: MAPPA</h6>
-            <h6 class="card-text">Gender : Action, Drama, supernatural </h6>
-            <h6 class="card-text">Audo: Subtitled & Dubled</h6>
-            <h6 class="card-text">Duraction: 23min/Ep</h6>
-            <h6 class="card-text">Status: awaiting</h6>
-              <p class="card-text"> <b>Synopsis:</b> Itadori just needed some more time with his friends and with his grandfather who was in the hospital. To do this, he decides to join the Occult club, where many adventures begin. There, the members find a cursed object and remove its protective seal, which attracts creatures called "curses". And from there he meets new friends and people called jujutsu sorcerers whose mission is to fight against curses and he ends up entering the jujutsu school and becomes a jujutsu sorcerer and his life changes completely.</p>
-            
+        <div class="accordion-collapse collapse" id="kimetsu" data-bs-parent="#animeAccordion">
+            <div class="accordion-body bg-dark-subtle">
+                <h6 class="card-text">Year: 2019</h6>
+                <h6 class="card-text">Author: Koyoharu Gotouge</h6>
+                <h6 class="card-text">Studio: Ufotable</h6>
+                <h6 class="card-text">Gender : Action, demons, supernatural, Shounen </h6>
+                <h6 class="card-text">Audio: Subtitled & Dubled</h6>
+                <h6 class="card-text">Duraction: 23min/Ep</h6>
+                <h6 class="card-text">Status: awaiting</h6>
+                <p class="card-text"> <b>Synopsis:</b> Tanjiro, a kind young man who makes a living selling coal, discovers that his family was massacred by a demon. And, to make matters worse, Nezuko, her younger sister and only survivor, also ended up transformed into a demon. And he joins the demon slayer squad and starts fighting and hunting oni to find the demon that transformed his sister, who is the original and oldest oni, to find the cure and transform his sister Kamado Nezuko back.</p>
+            </div>
         </div>
         <div class="card-footer bg-secondary">
-            <a style="font-size: x-large;" class="text-warning text-decoration-none p-1   " href=""><i class=" bi-cloud-arrow-down"></i>Sub</a>
-            <a style="font-size: x-large;" class="text-warning text-decoration-none p-1   " href=""><i class=" bi-cloud-arrow-down"></i>Dub</a>
-            <a style="font-size: x-large;" class="text-warning text-decoration-none p-1   " href=""><i class=" bi-cloud-arrow-down"></i>Mangá</a>
+            <a style="font-size: x-large;" class="text-warning text-decoration-none p-1" href=""><i class="bi bi-cloud-arrow-down"></i>Sub</a>
+            <a style="font-size: x-large;" class="text-warning text-decoration-none p-1" href=""><i class="bi bi-cloud-arrow-down"></i>Dub</a>
+            <a style="font-size: x-large;" class="text-warning text-decoration-none p-1" href=""><i class="bi bi-cloud-arrow-down"></i>Mangá</a>
         </div>
     </div>
+    
     <div class="card bg-black accordion-item col-5 m-1 border-black rounded d-sm-block w-100">
-        <img  style="height: 300px;"  src="img/12.jpg" alt="" class="card-img-top">
-        <h3 style="font-size: x-large;color: rgb(20, 238, 176);" class="card-header bg-secondary accordion-button collapsed " data-bs-toggle="collapse" data-bs-target="#onePunchMan" type="button">One Punch Man</h3>
+        <div class="accordion-header">
+            <img style="height: 300px;" src="img/jujutsu-kaisen.jpg" alt="" class="card-img-top">
+            <h3 style="font-size: x-large;color: rgb(20, 238, 176);" class="bg-secondary accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#jujutsu">Jujutsu Kaisen</h3>
+        </div>
         
-        <div class=" accordion-collapse collapse card-body bg-dark-subtle" id="onePunchMan">
-            <h6 class="card-text">Year: 2015</h6>
-            <h6 class="card-text">Author: Tomohiro Suzuki</h6>
-            <h6 class="card-text">Studio: Madhouse</h6>
-            <h6 class="card-text">Gender :  Action, overpower, super hero, scientific fiction, comedy, supernatural </h6>
-            <h6 class="card-text">Audo: Subtitled & Dubled</h6>
-            <h6 class="card-text">Duraction: 23min/Ep</h6>
-            <h6 class="card-text">Status: awaiting</h6>
-              <p class="card-text"> <b>Synopsis:</b>Saitama, an extremely powerful superhero, who became bored with the lack of challenges in his fights against evil and seeks to find a worthy opponent. On this journey he meets Genus, a young cyborg who ends up admiring him a lot and becomes his disciple, aiming to become stronger and Saitama and Genos join the superhero association and their journey continues.</p>
-            
+        <div class="accordion-collapse collapse" id="jujutsu" data-bs-parent="#animeAccordion">
+            <div class="accordion-body bg-dark-subtle">
+                <h6 class="card-text">Year: 2024</h6>
+                <h6 class="card-text">Author: Gege Akutami.</h6>
+                <h6 class="card-text">Studio: MAPPA</h6>
+                <h6 class="card-text">Gender : Action, Drama, supernatural </h6>
+                <h6 class="card-text">Audio: Subtitled & Dubled</h6>
+                <h6 class="card-text">Duraction: 23min/Ep</h6>
+                <h6 class="card-text">Status: awaiting</h6>
+                <p class="card-text"> <b>Synopsis:</b> Itadori just needed some more time with his friends and with his grandfather who was in the hospital. To do this, he decides to join the Occult club, where many adventures begin. There, the members find a cursed object and remove its protective seal, which attracts creatures called "curses". And from there he meets new friends and people called jujutsu sorcerers whose mission is to fight against curses and he ends up entering the jujutsu school and becomes a jujutsu sorcerer and his life changes completely.</p>
+            </div>
         </div>
         <div class="card-footer bg-secondary">
-            <a style="font-size: x-large;" class="text-warning text-decoration-none p-1   " href=""><i class=" bi-cloud-arrow-down"></i>Sub</a>
-            <a style="font-size: x-large;" class="text-warning text-decoration-none p-1   " href=""><i class=" bi-cloud-arrow-down"></i>Dub</a>
-            <a style="font-size: x-large;" class="text-warning text-decoration-none p-1   " href=""><i class=" bi-cloud-arrow-down"></i>Mangá</a>
+            <a style="font-size: x-large;" class="text-warning text-decoration-none p-1" href=""><i class="bi bi-cloud-arrow-down"></i>Sub</a>
+            <a style="font-size: x-large;" class="text-warning text-decoration-none p-1" href=""><i class="bi bi-cloud-arrow-down"></i>Dub</a>
+            <a style="font-size: x-large;" class="text-warning text-decoration-none p-1" href=""><i class="bi bi-cloud-arrow-down"></i>Mangá</a>
+        </div>
+    </div>
+    
+    <div class="card bg-black accordion-item col-5 m-1 border-black rounded d-sm-block w-100">
+        <div class="accordion-header">
+            <img style="height: 300px;" src="img/12.jpg" alt="" class="card-img-top">
+            <h3 style="font-size: x-large;color: rgb(20, 238, 176);" class="bg-secondary accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#onePunchMan">One Punch Man</h3>
+        </div>
+        
+        <div class="accordion-collapse collapse" id="onePunchMan" data-bs-parent="#animeAccordion">
+            <div class="accordion-body bg-dark-subtle">
+                <h6 class="card-text">Year: 2015</h6>
+                <h6 class="card-text">Author: Tomohiro Suzuki</h6>
+                <h6 class="card-text">Studio: Madhouse</h6>
+                <h6 class="card-text">Gender :  Action, overpower, super hero, scientific fiction, comedy, supernatural </h6>
+                <h6 class="card-text">Audio: Subtitled & Dubled</h6>
+                <h6 class="card-text">Duraction: 23min/Ep</h6>
+                <h6 class="card-text">Status: awaiting</h6>
+                <p class="card-text"> <b>Synopsis:</b>Saitama, an extremely powerful superhero, who became bored with the lack of challenges in his fights against evil and seeks to find a worthy opponent. On this journey he meets Genus, a young cyborg who ends up admiring him a lot and becomes his disciple, aiming to become stronger and Saitama and Genos join the superhero association and their journey continues.</p>
+            </div>
+        </div>
+        <div class="card-footer bg-secondary">
+            <a style="font-size: x-large;" class="text-warning text-decoration-none p-1" href=""><i class="bi bi-cloud-arrow-down"></i>Sub</a>
+            <a style="font-size: x-large;" class="text-warning text-decoration-none p-1" href=""><i class="bi bi-cloud-arrow-down"></i>Dub</a>
+            <a style="font-size: x-large;" class="text-warning text-decoration-none p-1" href=""><i class="bi bi-cloud-arrow-down"></i>Mangá</a>
         </div>
     </div>
 </div>
-</div>
-</div>
 
-
-
-    <footer style=" margin:auto; box-shadow: 10px 0px 20px 10px rgb(44, 44, 44); border-radius: 20px 20px 0px 0px;" class="  mt-5 ">
-      <div style="margin:auto;" class="container d-sm-block  d-lg-flex d-xl-flex text-white text-center  row row-cols-12  ">
-        <div  class="container-fluid d-inline m-2 divf col " >
+    <footer style=" margin:auto; box-shadow: 10px 0px 20px 10px rgb(44, 44, 44); border-radius: 20px 20px 0px 0px;" class="mt-5">
+      <div style="margin:auto;" class="container d-sm-block d-lg-flex d-xl-flex text-white text-center row row-cols-12">
+        <div class="container-fluid d-inline m-2 divf col">
             <h5>Contacts</h5>
-           <a href="" class="text-info " >CentralAnimes258@gmail.com</a>
+           <a href="" class="text-info">CentralAnimes258@gmail.com</a>
            <br>
            <p> +258 84 891 7702 <br> <i class="bi bi-telephone"></i>+258 82 242 2782 <br> +258 85 112 6778</p>
            <p> <i class="bi bi-house-door-fill me-2"></i> <br>Mozambique, Maputo- Matola <br>
         Khongolote Av nr 261</p>
-        <div  style="align-items: center;justify-content: center;padding: 2px;"  class="container-fluid d-block d-flex p- text-center">
+        <div style="align-items: center;justify-content: center;padding: 2px;" class="container-fluid d-block d-flex p-text-center">
             <i style="font-size: 22px; padding-right: 20px;" class="bi bi-whatsapp text-success text-lg"></i>
             <i style="font-size: 22px;padding-right: 20px" class="bi bi-facebook text-primary"></i>
             <i style="font-size: 22px;padding-right: 20px" class="bi bi-youtube text-danger"></i>
             <i style="font-size: 22px;padding-right: 20px" class="bi bi-telegram text-info"></i>
         </div>
         </div>
-        <div  class="container-fluid d-inline m-2 divf col ">
+        <div class="container-fluid d-inline m-2 divf col">
             <h5>Partners</h5>
         Casa da Cienciab <br>
         Central dos Visionarios <br>
         the Best Quality Services <br>
         <p>Joffrey' Softwares ltd & ATD </p>
-       
         </div>
-        <div  class="container-fluid d-inline m-2 divf col ">
+        <div class="container-fluid d-inline m-2 divf col">
             <h5>Works</h5>
             <br>
-            <a href="" class="text-info ">Joffreys Hub</a><br>
-            <a href="" class="text-info ">internacional music  Hub</a><br>
-            <a href="" class="text-info ">Mz Sequestros</a>
+            <a href="" class="text-info">Joffreys Hub</a><br>
+            <a href="" class="text-info">internacional music Hub</a><br>
+            <a href="" class="text-info">Mz Sequestros</a>
         </div>
-        <div class="container-fluid d-inline m-1 divf col ">
+        <div class="container-fluid d-inline m-1 divf col">
             <h5>Documentation</h5>
             <br>
-           
-            <a href="" class="text-info  "><i class="bi bi-bootstrap"></i>Bootstrao 5.2.</a><br>
-            <a href="" class="text-info  "> <i class="bi bi-filetype-html "></i>Html</a><br>
-            <a href="" class="text-info  "><i class="bi bi-filetype-css"></i>CSS</a><br>
-            <a href="" class="text-info  "><i class="bi bi-filetype-js"></i>Java Script</a><br>
-            <a href="" class="text-info  "><i class="bi bi-filetype-js"></i>Download</a><br>
-            <a href="" class="text-info "><i class="bi bi-filetype-js"></i>App</a><br>
+            <a href="" class="text-info"><i class="bi bi-bootstrap"></i>Bootstrao 5.2.</a><br>
+            <a href="" class="text-info"> <i class="bi bi-filetype-html"></i>Html</a><br>
+            <a href="" class="text-info"><i class="bi bi-filetype-css"></i>CSS</a><br>
+            <a href="" class="text-info"><i class="bi bi-filetype-js"></i>Java Script</a><br>
+            <a href="" class="text-info"><i class="bi bi-filetype-js"></i>Download</a><br>
+            <a href="" class="text-info"><i class="bi bi-filetype-js"></i>App</a><br>
         </div>
       </div>
-      <div style="text-align: center; justify-content: center; " class="container text-warning d-flex"> Made, engeneerd, powered by Joffrey's Softwares LTD</div>
-      <div style="text-align: center; justify-content: center; " class="container text-white  d-flex"> <h4 >©</h4> All Rights reserved </div>
-
+      <div style="text-align: center; justify-content: center;" class="container text-warning d-flex"> Made, engeneerd, powered by Joffrey's Softwares LTD</div>
+      <div style="text-align: center; justify-content: center;" class="container text-white d-flex"> <h4>©</h4> All Rights reserved </div>
     </footer>
-   
-    <script src="js/bootstrap.bundle.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha284-YvpcrYf0tY2lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const accordionItems = document.querySelectorAll('.accordion-item');
+            
+            accordionItems.forEach(item => {
+                const button = item.querySelector('.accordion-button');
+                const collapse = item.querySelector('.accordion-collapse');
+                
+                button.addEventListener('click', function() {
+                    // Se já estiver aberto, fecha manualmente
+                    if (!button.classList.contains('collapsed')) {
+                        const bsCollapse = new bootstrap.Collapse(collapse, {
+                            toggle: false
+                        });
+                        bsCollapse.hide();
+                    }
+                });
+            });
+        });
+        </script>
 </body>
 </html>
